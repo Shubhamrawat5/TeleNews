@@ -6,7 +6,6 @@ f=open("data.txt",'r')
 data=f.readline()
 data=eval(data)
 bot_token=data["token"]
-chat_id=int(data["id"])
 chat_tag=data["tag"]
 
 bot = telebot.TeleBot(token=bot_token)
@@ -33,22 +32,16 @@ List.insert(0,'☆☆☆☆☆💥 Tech News 💥☆☆☆☆☆')
 text = " ".join(List)
 print(text)
 
-ch=int(input(f"ENTER WHERE TO SEND! \n1 to send in chat id: {chat_id} \n2 to send in chat link tag: {chat_tag}\nEnter choice: "))
-if(ch==1):
-	try:
-		bot.send_message(chat_id,text)
-		print("TECH NEWS POSTED !")
-	except:
-		print("Something is wrong!!!!!!! (maybe token or chat id is not correct!")
-		
-elif(ch==2):
+print("\n------------------------")
+ch=input(f"ENTER 1 TO SEND ABOVE TECH NEWS TO GROUP LINK TAG: {chat_tag} or ENTER ANY OTHER CHARACTER NOT TO SEND! :")
+if(ch=='1'):
 	try:
 		bot.send_message(chat_tag,text)
-		print("TECH NEWS POSTED !")
+		print("\nTECH NEWS POSTED :) !!")
 	except:
 		print("Something is wrong!!!!!!! (maybe token or chat link tag is not correct!")
 
 else:
-		print("Incorrect Choice! Try again!!")
+		print("\nNot Posted :( !!")
 		
 f.close()
