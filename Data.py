@@ -2,6 +2,7 @@ def change():
 	d={}
 	w=open("data.txt",'w')
 	print("++++++++++++++++++++++++++++")
+	print("Enter token(compulsory) and enter chatID or chat link tag (any one correct!)")
 	token = input("Enter token: ")
 	id = input("Enter group/channel/user id: ")
 	tag= input("Enter group tag with @: ")

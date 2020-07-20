@@ -43,9 +43,12 @@ if(ch==1):
 		
 elif(ch==2):
 	try:
-		bot.send_message(chat_id,text)
+		bot.send_message(chat_tag,text)
 		print("TECH NEWS POSTED !")
 	except:
 		print("Something is wrong!!!!!!! (maybe token or chat link tag is not correct!")
+
+else:
+		print("Incorrect Choice! Try again!!")
 		
 f.close()
