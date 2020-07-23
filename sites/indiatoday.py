@@ -18,7 +18,7 @@ def today():
 		List.append("\n\n🌐")
 		List.append(Y.get_text())	
 		
-	List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
+	#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 	
 	url= 'https://www.indiatoday.in/technology/news?page=1'
 	page = requests.get(url)

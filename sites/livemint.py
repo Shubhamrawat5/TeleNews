@@ -14,8 +14,8 @@ def mint():
 		count=count+1
 		if(count==15):
 			break
-		if(count==11):
-			List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
+		#if(count==11):
+			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 
 		List.append("\n\n🌐")
 		if(i.text[-4:]=="2020"):

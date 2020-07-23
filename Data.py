@@ -1,3 +1,10 @@
+import pyfiglet
+
+print("\n")
+banner = pyfiglet.figlet_format("WELCOME")
+print(banner)
+
+
 def change():
 	r=open("data.txt",'r')
 
@@ -12,7 +19,7 @@ def change():
 	if(i!='0'):
 		token=i
 		
-	tag = input("Enter group chat link/tag with @: ")
+	tag = input("Enter group chat tag with @ or Enter id: ")
 	d["token"]=token
 	d["tag"]=tag
 	
