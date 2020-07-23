@@ -11,7 +11,10 @@ def mint():
 	count=0
 	for i in cl:
 		#print(i.text)
+		if("How" in i.text):
+			continue
 		count=count+1
+		
 		if(count==15):
 			break
 		#if(count==11):
