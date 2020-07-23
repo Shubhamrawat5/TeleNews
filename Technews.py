@@ -14,6 +14,7 @@ data=f.readline()
 data=eval(data)
 bot_token=data["token"]
 chat_tag=data["tag"]
+msg=data["msg"]
 f.close()
 
 bot = telebot.TeleBot(token=bot_token)
@@ -37,6 +38,7 @@ else:
 	exit()
 
 List.insert(0,'☆☆☆☆☆💥 Tech News 💥☆☆☆☆☆')
+List.append("\n\n"+msg)
 #print(List)
 text = " ".join(List)
 print(text)

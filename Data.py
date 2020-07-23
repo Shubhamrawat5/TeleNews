@@ -14,19 +14,23 @@ def change():
 	token=d['token']
 
 	print("++++++++++++++++++++++++++++")
-	i = input("Enter new token (or enter 0 if you dont wanna change previous token): ")
+	i = input("\nEnter new token (or enter 0 if you dont wanna change previous token): ")
 
 	if(i!='0'):
 		token=i
 		
-	tag = input("Enter group chat tag with @ or Enter id: ")
+	tag = input("\nEnter group chat tag with @ or Enter id: ")
+	
+	msg =input("\nEnter a message you want to get added in the end of the Tech News (like your channel name or link, if you don't want then just put a space): ")
+	
 	d["token"]=token
 	d["tag"]=tag
+	d["msg"]=msg
 	
 	f=open("data.txt",'w')
 	f.write(str(d))
 
-	print("\nToken and chat link/tag saved !")
+	print("\nToken and chat link/tag and msg saved !")
 	print("++++++++++++++++++++++++++++")
 	
 	f.close()
@@ -34,7 +38,7 @@ def change():
 def display():
 	r=open("data.txt",'r')
 	print("\n××××××××××××××××××××××××××××")
-	print("Current Token and chat link/tag:-")
+	print("Current Token and chat link/tag and message:-")
 	print(r.readline())
 	print("××××××××××××××××××××××××××××")
 
@@ -42,7 +46,7 @@ def display():
 
 while(True):
 	print("\n--------x-------------------x-----")
-	ch=input("1 to change token & chat link/tag\n2 to read current token & chat link/tag\n0 for exit\nEnter Choice: ")
+	ch=input("1 to change token & chat tag/id & message\n2 to read current token & chat tag/id & message\n0 for exit\nEnter Choice: ")
 	if(ch=="1"):
 		change()
 	elif(ch=="2"):
