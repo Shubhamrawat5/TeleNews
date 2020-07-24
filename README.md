@@ -105,9 +105,9 @@ Now it'll ask you to choose a source then ask for confirmation then send :)
 [Note: if you've followed all the instructions correctly then tech news will surely be posted! Otherwise check after 8th step and read everything carefully]
 
 
-`Now whenever you want to post tech news direct do 9th step only!`
+`Now whenever you want to post tech news direct do 10th step only!`
 
-`If you want to change bot or group then do 7th step`
+`If you want to change bot or group then do 9th step`
 
 <hr>
 
