@@ -14,8 +14,12 @@ def zee():
 	cl = soup.findAll(class_='sec-con-box')
 
 	#print(cl)
+	count=0
 	List = []
 	for i in cl:
+		count=count+1
+		if count==15:
+			break
 		#print(i.text)
 		x=i.text.find("\n\n\n")
 		#print(x)
