@@ -1,5 +1,5 @@
 # Tele-News !
-## To Create Your Own Telegram Tech-News Posting Bot
+## To Create Your Own Telegram Amazing Tech-News Posting Bot
 <img src = "https://user-images.githubusercontent.com/34619485/88335884-a7d4af00-cd51-11ea-8021-75e10a2a53f5.jpg" width="400"/>
 
 <hr>
