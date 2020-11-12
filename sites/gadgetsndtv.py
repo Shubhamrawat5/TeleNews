@@ -8,9 +8,8 @@ def ndtv():
 	headings = soup.findAll(class_='news_listing')
 	
 	List = []
-	count=0 #to get only top 15 news
+	count=0 #to get only top 14 news
 	for heading in headings:
-		#print(i.text)
 		count=count+1
 		
 		if count==15:

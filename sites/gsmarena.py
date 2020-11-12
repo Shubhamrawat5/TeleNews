@@ -12,7 +12,6 @@ def gsm():
 	newsList=[]
 	for heading in headings:
 		count+=1
-		newsList.append("\n\n🌐")
 
 		if count==15:
 			break
@@ -20,6 +19,7 @@ def gsm():
 		#if count==11:
 			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 		
+		newsList.append("\n\n🌐")
 		newsList.append(heading.text)
 
 	return newsList
