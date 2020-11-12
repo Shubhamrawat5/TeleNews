@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,gsmarena,xda)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
@@ -19,15 +19,15 @@ f.close()
 
 bot = telebot.TeleBot(token=bot_token)
 
-site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from LiveMint\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter Choice:-")
+site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from LiveMint\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter 6 to get Technews from xda-developers\nEnter 7 to get Technews from gsmarena\nEnter Choice:-")
 
 if(site=='1'):
 	print("\nCREATING TECH NEWS FROM GADGETSNDTV !\n")
 	List=gadgetsndtv.ndtv()
 	
 elif(site=='2'):
-	print("\nCREATING TECH NEWS FROM LIVEMINT !\n")
-	List=livemint.mint()
+	print("\nCREATING TECH NEWS FROM XDA-DEVELOPERS !\n")
+	List=xda.xda()
 	
 elif(site=='3'):
 	print("\nCREATING TECH NEWS FROM INDIATODAY !\n")
@@ -40,6 +40,14 @@ elif(site=='4'):
 elif(site=='5'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=zeenews.zee()
+
+elif(site=='6'):
+	print("\nCREATING TECH NEWS FROM LIVEMINT !\n")
+	List=livemint.mint()
+
+elif(site=='7'):
+	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
+	List=gsmarena.gsm()
 	
 else:
 	print("\nWrong Choice! Exit")

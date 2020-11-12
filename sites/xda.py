@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
-def xdaa():
+def xda():
     url="https://www.xda-developers.com/category/xda-news/"
     response=requests.get(url)
     
@@ -13,10 +13,12 @@ def xdaa():
     newsList=[]
     for heading in headings:
         count+=1
-        newsList.append("\n\n🌐")
-        newsList.append(heading.a.text)
         if count==15:
             break
-   
-   return newsList
- 
+		#if count==11:
+			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
+
+        newsList.append("\n\n🌐")
+        newsList.append(heading.a.text)
+
+    return newsList
