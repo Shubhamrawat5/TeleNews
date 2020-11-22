@@ -1,1 +1,1 @@
-{'token': 'XX:YYUYYYYYYYYYYUYUYYYY:YY', 'tag': '@pvx000', 'msg': ' '}
+{'token': 'XX:YYUYYYYYYYYYYUYUYYYY:YY', 'tag': '@pvxtechnews', 'msg': ' '}

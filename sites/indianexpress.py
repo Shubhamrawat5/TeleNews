@@ -14,6 +14,10 @@ def express():
 	List = []
 	
 	for heading in headings:
+		news=heading.h3.a.text
+		if news[:3]=="How" or news[-1]=="?": #filter heading that start with This,These and which end with ...
+			continue
+		
 		count+=1
 		if count==15:
 			break
@@ -22,7 +26,7 @@ def express():
 			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 		
 		List.append("\n\n🌐")
-		List.append(heading.h3.a.text)
+		List.append(news)
 
 	return List
 	

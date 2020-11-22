@@ -11,6 +11,11 @@ def mint():
 	List = []
 	count=0
 	for heading in headings:
+		news=heading.text
+		
+		if news[-12:]=="Details here": #slicing news that has "Details here" in the end
+			news=news[:-14]
+
 		count=count+1
 		
 		if count==15:
@@ -19,6 +24,6 @@ def mint():
 			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 
 		List.append("\n\n🌐")
-		List.append(heading.text)
+		List.append(news)
 
 	return List

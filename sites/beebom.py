@@ -12,6 +12,11 @@ def bom():
 	
     count=0 #to get only top 14 news
     for heading in headings:
+        news=heading.a.text
+
+        if news[:4]=="This" or news[:5]=="These" or news[-3:]=="...": #filter heading that start with This,These and which end with ...
+            continue
+
         count+=1
 
         if count==15:
@@ -19,7 +24,7 @@ def bom():
         #if count==11:
 			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
         
-        List.append("\n\n🔅")
-        List.append(heading.a.text)
+        List.append("\n\n🌐")
+        List.append(news)
 	
     return List
