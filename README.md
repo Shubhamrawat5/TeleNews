@@ -1,5 +1,7 @@
 # Tele-News !
+
 ## To Create Your Own Telegram Tech-News Posting Bot
+
 <img src = "https://user-images.githubusercontent.com/34619485/88335884-a7d4af00-cd51-11ea-8021-75e10a2a53f5.jpg" width="400"/>
 
 <hr>
@@ -10,40 +12,47 @@
 
 ### Instructions For Termux
 
-1) Install Termux from play store
+1. Install Termux from play store
 
-2) Install python on termux
+2. Install python on termux
+
 ```
 $ pkg install python
 ```
 
-3) Install git on termux
+3. Install git on termux
+
 ```
 $ pkg install git
 ```
 
-4) Give storage permission to termux
+4. Give storage permission to termux
+
 ```
 $ termux-setup-storage
 ```
 
-5) Copy the github repository
+5. Copy the github repository
+
 ```
 $ git clone https://github.com/Shubhamrawat5/TeleNews.git
 ```
 
-6) Open the TeleNews folder created on your phone
+6. Open the TeleNews folder created on your phone
+
 ```
 $ cd TeleNews
 ```
 
 7. Upgrade
+
 ```
 $ pkg upgrade
 ```
 
 8. Install required libraries
-``` 
+
+```
 $ pip install -r requirements.txt
 ```
 
@@ -87,23 +96,25 @@ Save your telegram id
 
 <hr>
 
-9) Now you have token and your_id or group_tag , Execute Data file
+9. Now you have token and your_id or group_tag , Execute Data file
+
 ```
-$ python Data.py
+$ python data.py
 ```
+
 Now enter 1 and then enter token then enter your_id or group_tag or group_id
 
 Now after saving send 0 to exit from the file
 
-10) Finally last step to post some awesome tech news!!!
+10. Finally last step to post some awesome tech news!!!
+
 ```
-python Technews.py
+$ python news.py
 ```
 
 Now it'll ask you to choose a source then ask for confirmation then send :)
 
 [Note: if you've followed all the instructions correctly then tech news will surely be posted! Otherwise check after 8th step and read everything carefully]
-
 
 `Now whenever you want to post tech news direct do 10th step only!`
 
@@ -113,10 +124,18 @@ Now it'll ask you to choose a source then ask for confirmation then send :)
 
 ## Issues
 
-If you face any issue, feel free to contact on telegram -> [Krypton](https://t.me/KryptonPVX)
+- If you face any issue, feel free to contact on telegram -> [Krypton](https://t.me/KryptonPVX)
 
-Join My PVX Telegram TechNews group -> [TechNews](https://t.me/pvxtechnews)
+- Join My PVX Telegram TechNews group -> [TechNews](https://t.me/pvxtechnews)
 
-Join the PVX chat group -> [PVX](https://t.me/PVX_Community)
+- Join the PVX chat group -> [PVX](https://t.me/PVX_Community)
 
+## Errors
 
+If you face error `TypeError: __init__() got an unexpected keyword argument 'token'` then you've installed telebot library which isn't right! Now follow the steps!
+
+1. uninstall telebot by `pip uninstall telebot`
+2. uninstall pyTelegramBotAPI by `pip uninstall pyTelegramBotAPI`
+3. install pyTelegramBotAPI by `pip install pyTelegramBotAPI`
+
+Now run `python news.py`
